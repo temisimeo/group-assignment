@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>UTISP</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="container">
+     <h1 class="text-success">University Talent and Innovation Showcase Platform</h1>
+   <form action="" method="POST">
+  <label for="">Student name</label><br>
+<input type="text" name="name" class="form-control w-75"  placeholder="Enter your name" required><br>
+<label for="">Talent/Inovation Tittle</label><br>
+<input type="text" name="talent" class="form-control w-75" placeholder="Enter your talent/innovation title"><br>
+<label for="">Talent/Innovation Description</label><br>
+<textarea name="description" class="form-control w-75" id="" placeholder="Tell more about your talent/innovation" required></textarea><br>
+<button type="submit" class="btn btn-primary">Submit</button>
+
+   </form>
+    </div>
+</body>
+</html>
