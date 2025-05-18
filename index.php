@@ -1,5 +1,5 @@
 <?php
-  echo "My php and sql code";
+  //echo "My php and sql code";
 ?>
 <!DOCTYPE html>
 <html lang="en">
