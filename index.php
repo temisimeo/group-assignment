@@ -1,6 +1,4 @@
-<?php
-  //echo "My php and sql code";
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
