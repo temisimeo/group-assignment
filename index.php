@@ -4,7 +4,8 @@ if(isset($_POST['save'])){
   $nm=$_POST['name'];
   $tal=$_POST['talent_title'];
   $des=$_POST['description'];
-  $weka = mysqli_query($con,"INSERT INTO talents VALUES('','$nm','$tal','$des')");
+  $contact=$_POST['contact'];
+  $weka = mysqli_query($con,"INSERT INTO talents VALUES('','$nm','$tal','$des','$contact')");
     if($weka >0){
       $send = "Successfully saved...";
     }
@@ -24,7 +25,7 @@ if(isset($_POST['save'])){
 <label for="">Talent/Innovation Description</label><br>
 <textarea name="description" class="form-control w-75" id="" placeholder="Tell more about your talent/innovation" required></textarea><br>
 <label for="">Contacts</label><br>
-<input type="text" name="contacts" class="form-control w-75" placeholder="Enter your contacts information"><br>
+<input type="text" name="contact" class="form-control w-75" placeholder="Enter your contact information"><br>
 <button type="submit" class="btn btn-primary" name="save">Submit</button>
 <a href="student_talent.php" class="btn btn-success">View Student talents</a>
    </form>
