@@ -11,6 +11,6 @@ if (isset($_GET['id'])) {
         echo "Error deleting record: " . mysqli_error($con);
     }
 } else {
-    echo "There was an error.";
+    echo "Invalid request.";
 }
 ?>
