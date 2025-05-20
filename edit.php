@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $update = mysqli_query($con, "UPDATE talents SET talent_title='$title', description='$desc' WHERE id=$id");
 
     if ($update) {
-        header("Location: description.php");
+        header("Location: student_talent.php");
         exit();
     } else {
         echo "Update failed.";
@@ -38,6 +38,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <textarea name="description" class="form-control" rows="5" required><?php echo $data['description']; ?></textarea>
         </div>
         <button type="submit" class="btn btn-success">Update</button>
-        <a href="view.php" class="btn btn-secondary">Cancel</a>
+        <a href="student_talent.php" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
