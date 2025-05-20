@@ -11,6 +11,10 @@ while($see=mysqli_fetch_array($take)){
                <p><strong>Student name:</strong> $gname</p>
                <p><i>Title: </i> $gtal</p>
                <p><strong>Description: </strong>$gdes <strong><a href='description.php?id=$id' class='text-primary' style='text-decoration: none; font-size: 20px;'>Read description</a></strong></p>
+               <p>
+               <a href='edit.php?id=$id' class='btn btn-sm btn-primary'>Edit</a>
+               <a href='delete.php?id=$id' class='btn btn-sm btn-danger' onclick=\"return confirm('Are you sure you want to delete this record?');\">Delete</a>
+               </p>
                <hr>
      ";
      
