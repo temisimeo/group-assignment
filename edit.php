@@ -13,7 +13,8 @@ if (isset($_GET['id'])) {
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = mysqli_real_escape_string($con, $_POST['talent_title']);
     $desc = mysqli_real_escape_string($con, $_POST['description']);
-    $update = mysqli_query($con, "UPDATE talents SET talent_title='$title', description='$desc' WHERE id=$id");
+    $contact = mysqli_real_escape_string($con, $_POST['contact']);
+    $update = mysqli_query($con, "UPDATE talents SET talent_title='$title', description='$desc', contact='$contact' WHERE id=$id");
 
     if ($update) {
         header("Location: student_talent.php");
@@ -37,6 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label>Description:</label>
             <textarea name="description" class="form-control" rows="5" required><?php echo $data['description']; ?></textarea>
         </div>
+        <div class="form-group">
+            <label>Contact:</label>
+            <input type="text" name="contact" class="form-control" value="<?php echo $data['contact']; ?>" required>
+
         <button type="submit" class="btn btn-success">Update</button>
         <a href="student_talent.php" class="btn btn-secondary">Cancel</a>
     </form>
