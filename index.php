@@ -24,7 +24,7 @@ if(isset($_POST['save'])){
 <label for="">Talent/Innovation Description</label><br>
 <textarea name="description" class="form-control w-75" id="" placeholder="Tell more about your talent/innovation" required></textarea><br>
 <label for="">Contacts</label><br>
-<input type="text" name="contacts" class="form-control w-75" placeholder="Enter your contacts"><br>
+<input type="text" name="contacts" class="form-control w-75" placeholder="Enter your contacts information"><br>
 <button type="submit" class="btn btn-primary" name="save">Submit</button>
 <a href="student_talent.php" class="btn btn-success">View Student talents</a>
    </form>
