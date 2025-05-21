@@ -1,3 +1,3 @@
 # group-assignment
-Group assignment 
-mbeya university
+Group member information
+1. Temi K. Simeo, Reg. 23100533350091
